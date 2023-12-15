@@ -1,10 +1,16 @@
-# HR_App
-Instructions to run it - 
+# BarHR Team Project
 
-For backend - 
-- npm install
-- npm run
+Group Name: Bay Area Rockers
+Group Members:
+1. Shawn Chumbar
+2. Dhruval Shah
+3. Sajal Agarwal
 
-For frontend - 
-- npm install
-- npm run
+## Commands to run it - 
+### backend - 
+npm install
+npm start
+
+### frontend - 
+npm install
+npm start
