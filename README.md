@@ -8,9 +8,9 @@ Group Members:
 
 ## Commands to run it - 
 ### backend - 
-npm install
+npm install <br>
 npm start
 
 ### frontend - 
-npm install
+npm install <br>
 npm start
