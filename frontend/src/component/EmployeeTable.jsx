@@ -39,21 +39,6 @@ class AdminEmployeeTable extends Component {
         // filter: true ,
       },
       {
-        headerName: "Email",
-        field: "Email",
-        sortable: true,
-        // filter: true ,
-        width: 150,
-      },
-      {
-        headerName: "Account Access",
-        field: "Account",
-        sortable: true,
-
-        // width: 70,
-        // filter: true ,
-      },
-      {
         headerName: "First Name",
         field: "FirstName",
         sortable: true,
@@ -78,6 +63,15 @@ class AdminEmployeeTable extends Component {
         // filter: true ,
       },
       {
+        headerName: "Email",
+        field: "Email",
+        sortable: true,
+        // filter: true ,
+        width: 150,
+      },
+      
+      
+      {
         headerName: "DOB",
         field: "DOB",
         sortable: true,
@@ -92,20 +86,28 @@ class AdminEmployeeTable extends Component {
         width: 117,
         // filter: true ,
       },
+      {
+        headerName: "Account Access",
+        field: "Account",
+        sortable: true,
+
+         width: 140,
+        // filter: true ,
+      },
 
       {
         headerName: "Role",
         field: "RoleName",
         sortable: true,
 
-        width: 70,
+        width: 110,
         // filter: true ,
       },
       {
         headerName: "Position Name",
         field: "PositionName",
         sortable: true,
-        width: 120,
+        width: 150,
 
         // filter: true ,
       },
@@ -114,7 +116,7 @@ class AdminEmployeeTable extends Component {
         field: "DepartmentName",
         sortable: true
         ,
-        width: 120,
+        width: 160,
         // filter: true ,
       },
 
@@ -125,7 +127,7 @@ class AdminEmployeeTable extends Component {
         field: "DateOfJoining",
         sortable: true
         ,
-        width: 120,
+        width: 150,
         // filter: true ,
 
       },
@@ -155,19 +157,19 @@ class AdminEmployeeTable extends Component {
 
 
       },
-      {
-        headerName: "",
-        field: "delete",
-        filter: false,
-        width: 30,
-        // cellRenderer:this.ageCellRendererFunc,
-        // cellRendererFramework: function(params) {
-        //   return <button OnClick={console.log("pa",params)}>Test</button>;
-        // },
-        cellRendererFramework: this.renderButton.bind(this),
+      // {
+      //   headerName: "",
+      //   field: "delete",
+      //   filter: false,
+      //   width: 30,
+      //   // cellRenderer:this.ageCellRendererFunc,
+      //   // cellRendererFramework: function(params) {
+      //   //   return <button OnClick={console.log("pa",params)}>Test</button>;
+      //   // },
+      //   cellRendererFramework: this.renderButton.bind(this),
 
 
-      },
+      // },
 
     ],
     rowData: [],
@@ -327,7 +329,7 @@ class AdminEmployeeTable extends Component {
           onClick={this.props.onAddEmployee}
         >
           <FontAwesomeIcon icon={faPlus} id="plus-icon" />
-          Add
+          Add an Employee
         </Button>
 
         <div id="clear-both" />

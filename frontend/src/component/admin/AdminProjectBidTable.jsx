@@ -46,12 +46,7 @@ class AdminProjectBidTable extends Component {
         sortable: true
         // filter: true ,
       },
-      {
-        headerName: "Portal",
-        field: "PortalName",
-        sortable: true
-        // filter: true ,
-      },
+      
       {
         headerName: "Project URL",
         field: "ProjectURL",
@@ -70,6 +65,12 @@ class AdminProjectBidTable extends Component {
         sortable: true,
         type: "numberColumn",
         filter: 'agNumberColumnFilter'
+        // filter: true ,
+      },
+      {
+        headerName: "Portal",
+        field: "PortalName",
+        sortable: true
         // filter: true ,
       },
       {
@@ -187,7 +188,7 @@ class AdminProjectBidTable extends Component {
   render() {
     return (
       <div id="table-outer-div-scroll">
-        <h2 id="role-title">Bidding Details</h2>
+        <h2 id="role-title">Project Details</h2>
         <Button
           variant="primary"
           id="add-button"

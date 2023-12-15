@@ -127,13 +127,13 @@ class AdminCompanyTable extends Component {
         width: 30,
         cellRendererFramework: this.renderEditButton.bind(this)
       },
-      {
-        headerName: "",
-        field: "delete",
-        filter: false,
-        width: 30,
-        cellRendererFramework: this.renderButton.bind(this)
-      }
+      // {
+      //   headerName: "",
+      //   field: "delete",
+      //   filter: false,
+      //   width: 30,
+      //   cellRendererFramework: this.renderButton.bind(this)
+      // }
     ],
     rowData: [],
     defaultColDef: {

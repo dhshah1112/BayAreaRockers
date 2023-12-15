@@ -109,15 +109,15 @@ class DashboardAdmin extends Component {
                       icon={faDollarSign}
                       className="sidebar-icon"
                     /> 
-                    Project Bidding 
+                    Project Details 
                   </Link> 
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/admin/portal-master">
                     <FontAwesomeIcon icon={faTasks} className="sidebar-icon" /> 
                     Portal Master 
                   </Link> 
-                </li>
+                </li> */}
                 
               </ul>
             </div>
@@ -149,11 +149,11 @@ class DashboardAdmin extends Component {
                   exact
                   component={AdminProjectBidF}
                 />
-                {/* <Route
+                <Route
                   exact
                   path="/admin"
                   render={() => <Redirect to="/admin/role" />}
-                /> */}
+                />
                 <Route render={() => 
 <NotFound404/>
                   // <Redirect to="/admin/role" />

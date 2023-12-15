@@ -26,6 +26,7 @@ import {
  faUser,
 faUserTie,
 faRupeeSign,
+faDollarSign,
 faFileAlt,
 faCity,
 faGlobeAmericas,
@@ -72,7 +73,6 @@ function LeaveApplicationHRF() {
 // function HRProjectBidF() {
 //   return <HRProjectBid />;
 // }
-
 class DashboardHR extends Component {
   state = {
     redirect: true,
@@ -116,13 +116,13 @@ class DashboardHR extends Component {
                 <li>
                   <Link to="/hr/employee">
                     <FontAwesomeIcon icon={faUser} className="sidebar-icon" /> 
-                    User 
+                    Employee Details 
                   </Link> 
                 </li>
                 <li>
                   <Link to="/hr/salary">
-                    <FontAwesomeIcon icon={faRupeeSign} className="sidebar-icon" /> 
-                    Salary 
+                    <FontAwesomeIcon icon={faDollarSign} className="sidebar-icon" /> 
+                    Salary Details
                   </Link> 
                 </li>
                 <li>
@@ -134,19 +134,19 @@ class DashboardHR extends Component {
                 <li>
                   <Link to="/hr/company">
                     <FontAwesomeIcon icon={faCity} className="sidebar-icon" /> 
-                    company 
+                    Company Details
                   </Link> 
                 </li>
                 <li>
                   <Link to="/hr/role">
                     <FontAwesomeIcon icon={faUsers} className="sidebar-icon" /> 
-                    Role 
+                    Roles 
                   </Link> 
                 </li>
                 <li>
                   <Link to="/hr/position">
                     <FontAwesomeIcon icon={faChair} className="sidebar-icon" /> 
-                    Position 
+                    Positions 
                   </Link> 
                 </li>
                 <li>
@@ -155,7 +155,7 @@ class DashboardHR extends Component {
                       icon={faBuilding}
                       className="sidebar-icon"
                     /> 
-                    Department 
+                    Departments 
                   </Link> 
                 </li>
                 <li>
@@ -248,11 +248,11 @@ class DashboardHR extends Component {
                   exact
                   component={HRProjectBidF}
                 /> */}
-                {/* <Route
+                <Route
                   exact
                   path="/hr"
                   render={() => <Redirect to="hr/employee" />}
-                /> */}
+                />
                 <Route render={() => <NotFound404/>} />
                 
               </Switch>
